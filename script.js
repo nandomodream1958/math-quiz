@@ -242,18 +242,31 @@ function adjustDifficulty() {
             subtractionLevel++;
             message = `レベルアップ！ 次は${subtractionLevel}桁のひき算！`;
             newBackgroundColor = levelColors.subtraction[subtractionLevel];
+        } else {
+            operationType = 'multiplication';
+            multiplicationLevel = 1;
+            message = `ひき算マスター！ 次はかけ算に挑戦だ！`;
+            newBackgroundColor = levelColors.multiplication[multiplicationLevel];
         }
     } else if (operationType === 'multiplication') {
         if (multiplicationLevel < 2) {
             multiplicationLevel++;
             message = `レベルアップ！ 次は2桁×1桁のかけ算！`;
             newBackgroundColor = levelColors.multiplication[multiplicationLevel];
+        } else {
+            operationType = 'division';
+            divisionLevel = 1;
+            message = `かけ算マスター！ 次はわり算に挑戦だ！`;
+            newBackgroundColor = levelColors.division[divisionLevel];
         }
     } else if (operationType === 'division') {
         if (divisionLevel < 2) {
             divisionLevel++;
             message = `レベルアップ！ 次は「答えが2桁」のわり算！`;
             newBackgroundColor = levelColors.division[divisionLevel];
+        } else {
+            message = "全クリ！おめでとう！";
+            // ここでゲームクリアの特別な処理を追加することもできます
         }
     }
 
