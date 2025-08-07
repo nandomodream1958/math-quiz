@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算クイズ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>計算クイズ</h1>
+        <p id="score">スコア: 0</p>
+        <div id="stats-container">
+            <span id="attempts">問題数: 0</span>
+            <span id="accuracy">正答率: ---</span>
+        </div>
+        <div id="quiz-container">
+            <p id="question"></p>
+            <div id="timer-container">
+                <span id="timer"></span>
+            </div>
+            <input type="number" id="answer" placeholder="答えを入力">
+            <button id="submit">こたえる</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

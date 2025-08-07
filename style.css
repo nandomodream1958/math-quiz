@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-size: 1.2rem; /* 全体のフォントサイズを大きくする */
+    transition: background-color 1s ease; /* 背景色を1秒かけて変化させる */
+}
+
+.container {
+    background-color: white;
+    padding: 3rem; /* パディングを大きくする */
+    border-radius: 10px; /* 角を少し丸くする */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 500px; /* コンテナの最大幅を設定 */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem; /* 見出しを大きく */
+}
+
+#score {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 0.5rem; /* マージンを調整 */
+}
+
+#stats-container {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+#stats-container span {
+    margin: 0 0.5rem;
+}
+
+#quiz-container {
+    margin: 2rem 0;
+}
+
+#question {
+    font-size: 2.5rem; /* 問題文を大きく */
+    margin-bottom: 1.5rem;
+}
+
+#timer-container {
+    margin-bottom: 1rem;
+}
+
+#timer {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#answer {
+    padding: 0.8rem;
+    font-size: 1.5rem; /* 入力欄を大きく */
+    width: 150px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem; /* ボタンを大きく */
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+#result {
+    font-size: 1.8rem; /* 結果表示を大きく */
+    font-weight: bold;
+    min-height: 2.2rem; /* 高さを確保してレイアウトのズレを防ぐ */
+}
